@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2E3C54;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+}
