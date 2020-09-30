@@ -48,49 +48,14 @@ input:focus {
     box-shadow: 0 0 3px #ff8742;
 }
 
-textarea:focus {
-    outline: none !important;
-    border:1px solid #2E3C54;
-    box-shadow: 0 0 3px #ff8742;
-}
-
-
 .main .way {
     margin: 30px 0px;
-}
-
-.espaco {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-    justify-content: space-between;
-}
-
-.contagem {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 4%;
 }
 
 form .horizontal {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
-    justify-content: space-between;
-    width: 85%;
-    margin-top: 4%;
-}
-
-form .horizontal textarea {
-    padding: 10px;
-    line-height: 1.5;
-    border: 1px solid;
-    resize: none;
-    width: 350px;
-    height: 100px;
 }
 
 form p {
@@ -102,7 +67,7 @@ form label {
 }
 
 form .input-padrao {
-    width: 350px;
+    width: 250px;
 }
 
 form section div {
