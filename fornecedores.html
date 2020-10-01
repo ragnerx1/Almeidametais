@@ -16,20 +16,39 @@
                 <img src="./img/logo.png" alt="logo">
             </div>
             <div class="navigation">
-                <a href="">HOME</a>
-                <a href="">CADASTROS</a>
-                <a href="">BALANÇA</a>
-                <a href="">PREPARAÇÃO</a>
-                <a href="">PRODUÇÃO</a>
-                <a href="">FUNDIÇÃO</a>
-                <a href="">PLANEJAMENTO</a>
-                <a href="">RELATÓRIOS</a>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CADASTROS</a>
+                        <!-- <ul>
+                            <li><a href="">Fornecedores</a></li>
+                            <li><a href="">Clientes</a></li>
+                            <li><a href="">Matérias Primas</a></li>
+                            <li><a href="">Armazem</a></li>
+                            <li><a href="">Novo usuário</a></li>
+                            <li><a href="">Paradas</a></li>
+                        </ul> -->
+                    
+                    </li>
+                    <li><a href="">BALANÇA</a></li>
+                    <li><a href="">PREPARAÇÃO</a></li>
+                    <li><a href="">PRODUÇÃO</a></li>
+                    <li><a href="">FUNDIÇÃO</a></li>
+                    <li><a href="">PLANEJAMENTO</a></li>
+                    <li><a href="">RELATÓRIOS</a></li>
+                </ul>
             </div>
         </header>
 
         <div class="principal">
             <div class="main">
-                <p class="way">Cadastros > <strong>Cadastro de Fornecedores</strong> </p>
+                <div class="top">
+                    <p class="way">Cadastros > <strong>Cadastro de Fornecedores</strong> </p>
+                    <div>
+                        <label for="pesquisar"></label>
+                        <input class="input-padrao" type="text" id="pesquisar" placeholder="Pesquisa">
+                        <button>Cadastrar</button>
+                    </div>
+                </div>
                 <table>
                     <tr class="comando">
                         <td>Cód. Forenecedor</td>
