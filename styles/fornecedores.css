@@ -5,6 +5,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
    
 }
 
@@ -20,13 +21,40 @@ header{
     margin-left: 5vw;
 }
 
-.navigation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 70px;
+.navigation ul li{
+    background-color: #b3b2b0;
+    color: white;
+    float: left;
+    width: 150px;
     height: 40px;
-    overflow-y: hidden;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.navigation ul li:hover{
+    background-color: #fca316;
+    color: white;
+}
+.navigation ul{
+    padding: 0;
+}
+.navigation ul ul {
+    display: none;
+    background-color: #fca316;
+}
+.navigation ul li:hover > ul {
+    display: block;
+}
+
+.navigation ul ul li {
+    background-color: #fca316;
+    width: 300px;
+}
+
+.lista-branca li a{
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .navigation a {
@@ -36,19 +64,25 @@ header{
     font-weight: 600;
 }
 
-.navigation a:hover{ color: #f5f1ed;}
-
-
+.navigation a:hover{ color: #f5f1ed;
+    background-color: #fca316;
+}
+/*
 .navigation ul {
     position: relative;
     margin: 0;
     padding: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
- .navigation ul li{
-     display: inline-block;
+ .navigation ul ui{
+     display: none;
  }
 
+.navigation ul li:hover > ul {
+    display: block;
+} */
 
 .principal {
 	padding: 0 50px;
@@ -96,6 +130,12 @@ table tr td{
 .comando td:nth-of-type(6),
 .comandado td:nth-of-type(6){
     width: 6.75%;
+}
+
+#pesquisar:focus {
+    outline: none !important;
+    border:1px solid #2E3C54;
+    box-shadow: 0 0 3px #ff8742;
 }
 
 .comandado button {
