@@ -5,6 +5,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
    
 }
 
@@ -20,18 +21,52 @@ header{
     margin-left: 5vw;
 }
 
-.navigation{
-    margin-left: 70px;
+.navigation ul li{
+    background-color: #b3b2b0;
+    color: white;
+    float: left;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.navigation ul li:hover{
+    background-color: #fca316;
+    color: white;
+}
+.navigation ul{
+    padding: 0;
+}
+.navigation ul ul {
+    display: none;
+    background-color: #fca316;
+    padding: 0 10px;
+}
+.navigation ul li:hover > ul {
+    display: block;
+}
+
+.navigation ul ul li {
+    background-color: #fca316;
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+
+.lista-branca li a{
+    color: white;
 }
 
 .navigation a {
-    padding: 5px;
     margin: 10px;
     text-decoration: none;
     font-weight: 600;
+    
 }
 
-.navigation a:hover{ color: #f5f1ed;}
+.navigation a:hover{ color: #f5f1ed;
+    background-color: #fca316;}
 
 .principal {
 	padding: 0 50px;
@@ -87,7 +122,7 @@ body .button {
 }
 
 .button button {
-    background-color: #504d49;
+    background-color: #fca316;
     color: #ffffff;
     border-radius: 5px;
     border: none;

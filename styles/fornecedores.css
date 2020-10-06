@@ -42,6 +42,7 @@ header{
 .navigation ul ul {
     display: none;
     background-color: #fca316;
+    padding: 0 10px;
 }
 .navigation ul li:hover > ul {
     display: block;
@@ -49,19 +50,19 @@ header{
 
 .navigation ul ul li {
     background-color: #fca316;
-    width: 300px;
+    width: 200px;
+    border-bottom: 1px solid white;
 }
 
 .lista-branca li a{
     color: white;
-    border-bottom: 1px solid white;
 }
 
 .navigation a {
-    padding: 5px;
     margin: 10px;
     text-decoration: none;
     font-weight: 600;
+    
 }
 
 .navigation a:hover{ color: #f5f1ed;
