@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/cad-paradas.css">
+        <link rel="stylesheet" href="./styles/cad-armazem.css">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="shortcut icon" href="./img/favicon.ico" >
 
@@ -16,30 +16,42 @@
                 <img src="./img/logo.png" alt="logo">
             </div>
             <div class="navigation">
-                <a href="">HOME</a>
-                <a href="">CADASTROS</a>
-                <a href="">BALANÇA</a>
-                <a href="">PREPARAÇÃO</a>
-                <a href="">PRODUÇÃO</a>
-                <a href="">FUNDIÇÃO</a>
-                <a href="">PLANEJAMENTO</a>
-                <a href="">RELATÓRIOS</a>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CADASTROS</a>
+                        <ul class="lista-branca">
+                            <li><a href="./cad-fornecedores.html">Fornecedores</a></li>
+                            <li><a href="./cad-clientes.html">Clientes</a></li>
+                            <li><a href="./cad-materiaprima.html">Matérias Primas</a></li>
+                            <li><a href="./cad-armazem.html">Armazém</a></li>
+                            <li><a href="./cad-novousuario.html">Novo usuário</a><,/li>
+                            <li><a href="./cad-paradas.html">Paradas</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="">BALANÇA</a></li>
+                    <li><a href="">PREPARAÇÃO</a></li>
+                    <li><a href="">PRODUÇÃO</a></li>
+                    <li><a href="">FUNDIÇÃO</a></li>
+                    <li><a href="">PLANEJAMENTO</a></li>
+                    <li><a href="">RELATÓRIOS</a></li>
+                </ul>
             </div>
         </header>
 
         <div class="principal">
             <div class="main">
-                <p class="way">Cadastros > <strong>Parada (Manutenção)</strong> </p>
+                <p class="way">Cadastros > <strong>Paradas (Manutenção)</strong> </p>
                 <form>
                     <section class="horizontal">
                         <div >
-                            <label for="descricao-da-parada">Descrição da Parada</label>
-                            <textarea class="input-padrao" type="text" id="descricao-da-parada" required> </textarea>
+                            <label for="nome-do-armazem">Nome do Calaborador</label>
+                            <input class="input-padrao" type="text" id="nome-do-armazem" required>
                         </div>
 
                         <div style="margin-left: 5%;">
-                            <label for="codigo-parada">Código da Parada</label>
-                            <input class="input-numerico" type="text" id="codigo-parada">
+                            <label for="codigo-do-armazem">Código da parada</label>
+                            <input class="input-numerico" type="text" id="codigo-do-armazem">
                         </div>
 
                     </section>
