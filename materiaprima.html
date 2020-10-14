@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/cad-armazem.css">
+        <link rel="stylesheet" href="./styles/fornecedores.css">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="shortcut icon" href="./img/favicon.ico" >
 
-
-        <title>Cadastro</title>
+<!-- O css é o mesmo de fornecedores.html -->
+        <title>Matérias primas</title>
     </head>
     <body>
         <header>
@@ -23,7 +23,7 @@
                             <li><a href="./cad-fornecedores.html">Fornecedores</a></li>
                             <li><a href="./cad-clientes.html">Clientes</a></li>
                             <li><a href="./cad-materiaprima.html">Matérias Primas</a></li>
-                            <li><a href="./cad-armazem.html">Armazém</a></li>
+                            <li><a href="./cad-armazem.html">Armazem</a></li>
                             <li><a href="./cad-novousuario.html">Novo usuário</a></li>
                             <li><a href="./cad-paradas.html">Paradas</a></li>
                         </ul>
@@ -41,31 +41,33 @@
 
         <div class="principal">
             <div class="main">
-                <p class="way">Cadastros > <strong>Paradas (Manutenção)</strong> </p>
-                <form>
-                    <section class="horizontal">
-                        <div >
-                            <label for="nome-do-armazem">Nome do Calaborador</label>
-                            <input class="input-padrao" type="text" id="nome-do-armazem" required>
-                        </div>
-
-                        <div style="margin-left: 5%;">
-                            <label for="codigo-do-armazem">Código da parada</label>
-                            <input class="input-numerico" type="text" id="codigo-do-armazem">
-                        </div>
-
-                    </section>
-
-                </form>
-            </div>
-
-            <div class="button">
-                <button>SALVAR</button>
+                <div class="top">
+                    <p class="way">Cadastros > <strong>Cadastro de Matérias primas</strong> </p>
+                    <div>
+                        <label for="pesquisar"></label>
+                        <input class="input-padrao" type="text" id="pesquisar" placeholder="Pesquisa">
+                        <button>Cadastrar</button>
+                    </div>
+                </div>
+                <table>
+                    <tr class="comando">
+                        <td>Cód.Matérias primas</td>
+                        <td>Nome</td>
+                        <td>Armazém</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="comandado">
+                        <td>001</td>
+                        <td>Tecnologia LTDA</td>
+                        <td>128.345.678/0001-10</td>
+                        <td><a href="">Visualizar</a> </td>
+                        <td><button>Editar</button></td>
+                        <td>Inativar/Ativar</td>
+                    </tr>
+                </table>
             </div>
         </div>
-
-        <footer>
-            <p>Desenvolvido por Guilu</p>
-        </footer>
     </body>
 </html>
