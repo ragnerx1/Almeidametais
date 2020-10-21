@@ -9,7 +9,7 @@ header{
 }
 
 .logo {
-    width: 20vw;
+    width: 17vw;
     height: 90px;
     background-color: white;
 }
@@ -20,8 +20,22 @@ header{
     margin-left: 5vw;
 }
 
+#corte {
+    width: 68px;
+    height: 91px;
+    margin-left: -1px;
+    border-right: 60px solid transparent;
+    border-top: 91px solid #fff;
+    float: left;
+    position: relative;
+    z-index: 100;
+    display: flex;
+}
+
 .navigation{
-    margin-left: 70px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .navigation a {
