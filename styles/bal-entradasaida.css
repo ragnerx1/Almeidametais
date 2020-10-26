@@ -1,3 +1,163 @@
-p {
-    font-size: 80px;
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #b3b2b0;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    position: relative;
+   
+}
+
+.logo {
+    width: 17vw;
+    height: 90px;
+    background-color: white;
+}
+
+.logo img {
+    width: 10vw;
+    height: 80px;
+    margin-left: 5vw;
+}
+
+#corte {
+    width: 68px;
+    height: 91px;
+    margin-left: -1px;
+    border-right: 60px solid transparent;
+    border-top: 91px solid #fff;
+    float: left;
+    position: relative;
+    z-index: 100;
+    display: flex;
+}
+
+.navigation ul li{
+    background-color: #b3b2b0;
+    color: white;
+    float: left;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.navigation ul li:hover{
+    background-color: #fca316;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul ul {
+    display: none;
+    background-color: #fca316;
+    padding: 0 10px;
+}
+.navigation ul li:hover > ul {
+    display: block;
+}
+
+.navigation ul ul li {
+    background-color: #fca316;
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+
+.lista-branca li a{
+    color: white;
+}
+
+.navigation a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.navigation a:hover{ color: #f5f1ed;
+    background-color: #fca316;
+}
+
+.principal {
+	padding: 0 50px;
+}
+
+.main {
+    width: 75vw;
+    height: 70vh;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #2E3C54;
+    box-shadow: 0 0 3px #ff8742;
+}
+.main .way {
+    margin: 30px 0px;
+}
+
+form .horizontal {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+form p {
+    margin-top: 50px;
+}
+
+form label {
+    font-size: 13px;
+}
+
+form .input-padrao {
+    width: 250px;
+}
+
+form section div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0 30px 0 10px;
+}
+
+section div {
+    margin-right: 30px;
+}
+
+
+body .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button {
+    background-color: #fca316;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    width: 95px;
+    height: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color: #b3b2b0 ;
+}
+
+footer p{
+    display:flex;
+    justify-content: flex-end;
+    color: blue;
+    font-weight: 400;
+    margin-right: 1%;
 }

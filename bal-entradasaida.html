@@ -42,17 +42,23 @@
 
         <div class="principal">
             <div class="main">
-                <p class="way">Cadastros > <strong>Fornecedores</strong> </p>
+                <p class="way">Balança> <strong>Entrada/Saída de materiais</strong> </p>
                 <form>
                     <section class="horizontal">
                         <div >
-                            <label for="nome">Nome</label>
-                            <input class="input-padrao" type="text" id="nome" required >
+                            <label for="entrada-saida">Entrada/Saída</label>
+                            <select id="entrada-saida">
+                                <option>Entrada</option>
+                                <option>Saída</option>
+                            </select>
                         </div>
 
                         <div>
-                            <label for="nome-fantasia">Nome Fantasia</label>
-                            <input class="input-padrao" type="text" id="nome-fantasia">
+                            <label for="texto">Movimentação vai para estoque?</label>
+                            <input type="radio" id="sim" name="gender" value="male">
+                            <label for="sim">Sim</label><br>
+                            <input type="radio" id="não" name="gender" value="female">
+                            <label for="não">Não</label><br>
                         </div>
 
                         <div style="margin-left: 20%;">

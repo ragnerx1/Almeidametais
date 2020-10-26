@@ -1,6 +1,6 @@
 header{
     width: 100vw;
-    height: 100px;
+    height: 23vh;
     background-color: #b3b2b0;
     display: flex;
     flex-direction: row;
@@ -69,6 +69,27 @@ header{
     border-bottom: 1px solid white;
 }
 
+.ola {
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #787777;
+    color:white;
+}
+
+.ola button{
+    border: 0;
+    color: white;
+    background-color: #787777;
+    margin-right: 3%;
+}
+
+.ola p{
+    color: white;
+    margin-left: 1%;
+    font-size: 95%;
+}
+
 .lista-branca li a{
     color: white;
 }
@@ -114,7 +135,6 @@ textarea:focus {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
-    justify-content: space-between;
 }
 
 .contagem {
