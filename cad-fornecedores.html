@@ -34,108 +34,122 @@
                     <li><a href="">PREPARAÇÃO</a></li>
                     <li><a href="">PRODUÇÃO</a></li>
                     <li><a href="">FUNDIÇÃO</a></li>
-                    <li><a href="">PLANEJAMENTO</a></li>
                     <li><a href="">RELATÓRIOS</a></li>
                 </ul>
             </div>
         </header>
+        <div class="ola">
+            <p>Olá, Fulano!</p>
+            <button>Logout <img src="/img/logout.png" alt="saída"> </button>
+        </div>
 
         <div class="principal">
             <div class="main">
                 <p class="way">Cadastros > <strong>Fornecedores</strong> </p>
-                <form>
-                    <section class="horizontal">
-                        <div >
-                            <label for="nome">Nome</label>
-                            <input class="input-padrao" type="text" id="nome" required >
-                        </div>
 
-                        <div>
-                            <label for="nome-fantasia">Nome Fantasia</label>
-                            <input class="input-padrao" type="text" id="nome-fantasia">
-                        </div>
+                <div class="borda">
+                    <form>
+                        <section class="horizontal">
+                            <div >
+                                <label for="nome">Nome</label>
+                                <input class="input-padrao" type="text" id="nome" required >
+                            </div>
 
-                        <div>
-                            <label for="codigo-fornecedor">Código do Fornecedor</label>
-                            <input class="input-padrao" type="text" id="codigo-fornecedor" >
-                        </div>
-                    </section>
+                            <div>
+                                <label for="nome-fantasia">Nome Fantasia</label>
+                                <input class="input-padrao" type="text" id="nome-fantasia">
+                            </div>
 
-                    <section class="horizontal">
-                        <div>
-                            <label for="cnpj">CNPJ</label>
-                            <input class="input-numerico" type="text" id="cnpj">
-                        </div>
-                        <div>
-                            <label for="codigo-fornecedor">Inscrição Estadual</label>
-                            <input class="input-numerico" type="text" id="inscricao-estadual">
-                        </div>
-                    </section>
-                    
+                            <div>
+                                <label for="codigo-fornecedor">Código do Fornecedor</label>
+                                <input class="input-padrao" type="text" id="codigo-fornecedor" >
+                            </div>
+                        </section>
+
+                        <section class="horizontal">
+                            <div>
+                                <label for="cnpj">CNPJ</label>
+                                <input class="input-numerico" type="text" id="cnpj">
+                            </div>
+                            <div>
+                                <label for="codigo-fornecedor">Inscrição Estadual</label>
+                                <input class="input-numerico" type="text" id="inscricao-estadual">
+                            </div>
+                        </section>
+                    </form>    
+                </div>
+                
+                <div class="borda">
                     <p><strong>Endereço</strong></p>
 
-                    <section class="horizontal">
-                        <div>
-                            <label for="rua">Rua</label>
-                            <input class="input-padrao" type="text" id="rua">
-                        </div>
+                    <form>
+                        <section class="horizontal">
+                            <div>
+                                <label for="rua">Rua</label>
+                                <input class="input-padrao" type="text" id="rua">
+                            </div>
 
-                        <div>
-                            <label for="numero">Número</label>
-                            <input class="input-numerico" type="text" id="numero">
-                        </div>
+                            <div>
+                                <label for="numero">Número</label>
+                                <input class="input-numerico" type="text" id="numero">
+                            </div>
 
-                        <div>
-                            <label for="complemento">Complemento</label>
-                            <input class="input-padrao" type="text" id="complemento">
-                        </div>
-                    </section>
+                            <div>
+                                <label for="complemento">Complemento</label>
+                                <input class="input-padrao" type="text" id="complemento">
+                            </div>
+                        </section>
 
-                    <section class="horizontal">
-                        <div>
-                            <label for="bairro">Bairro</label>
-                            <input class="input-padrao" type="text" id="bairro">
-                        </div>
+                        <section class="horizontal">
+                            <div>
+                                <label for="bairro">Bairro</label>
+                                <input class="input-padrao" type="text" id="bairro">
+                            </div>
 
-                        <div>
-                            <label for="municipio">Município</label>
-                            <input class="input-padrao" type="text" id="municipio">
-                        </div>
+                            <div>
+                                <label for="municipio">Município</label>
+                                <input class="input-padrao" type="text" id="municipio">
+                            </div>
 
-                        <div>
-                            <label for="cidade">Cidade</label>
-                            <input class="input-padrao" type="text" id="cidade">
-                        </div>
+                            <div>
+                                <label for="cidade">Cidade</label>
+                                <input class="input-padrao" type="text" id="cidade">
+                            </div>
 
-                        <div>
-                            <label for="estado">Estado</label>
-                            <input class="input-padrao" type="text" id="estado">
-                        </div>
-                    </section>
+                            <div>
+                                <label for="estado">Estado</label>
+                                <input class="input-padrao" type="text" id="estado">
+                            </div>
+                        </section>
+                    </form>
+                </div>
 
+                <div class="borda">
                     <p><strong>Contato</strong> </p>
+                    <form>
+                        <section class="horizontal">
+                            <div>
+                                <label for="nome-contato">Nome do contato</label>
+                                <input class="input-padrao" type="text" id="nome-contato">
+                            </div>
 
-                    <section class="horizontal">
-                        <div>
-                            <label for="nome-contato">Nome do contato</label>
-                            <input class="input-padrao" type="text" id="nome-contato">
-                        </div>
+                            <div>
+                                <label for="telefone">Telefone</label>
+                                <input class="input-numerico" type="text" id="telefone">
+                            </div>
 
-                        <div>
-                            <label for="telefone">Telefone</label>
-                            <input class="input-numerico" type="text" id="telefone">
-                        </div>
+                            <div>
+                                <label for="celular">Celular</label>
+                                <input class="input-numerico" type="text" id="celular">
+                            </div>
 
-                        <div>
-                            <label for="celular">Celular</label>
-                            <input class="input-numerico" type="text" id="celular">
-                        </div>
-
-                        <div>
-                            <label for="email">E-mail</label>
-                            <input class="input-padrao" type="text" id="email">
-                        </div>
-                    </section>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input class="input-padrao" type="text" id="email">
+                            </div>
+                        </section>
+                    </form>
+                </div>    
                 </form>
             </div>
 
@@ -145,7 +159,7 @@
         </div>
 
         <footer>
-            <p>Desenvolvido por Guilu</p>
+            <p>Desenvolvido por <strong>Guilu</strong></p>
         </footer>
     </body>
 </html>

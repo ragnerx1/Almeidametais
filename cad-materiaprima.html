@@ -34,67 +34,207 @@
                     <li><a href="">PREPARAÇÃO</a></li>
                     <li><a href="">PRODUÇÃO</a></li>
                     <li><a href="">FUNDIÇÃO</a></li>
-                    <li><a href="">PLANEJAMENTO</a></li>
                     <li><a href="">RELATÓRIOS</a></li>
                 </ul>
             </div>
         </header>
         <div class="ola">
             <p>Olá, Fulano!</p>
-            <button>Logout</button>
+            <button>Logout <img src="/img/logout.png" alt="saída"> </button>
         </div>
 
         <div class="principal">
             <div class="main">
-                <p class="way">Cadastros > <strong>Matéria prima, acabados, insumos auxiliares</strong> </p>
+                <p class="way">Cadastros > <strong>Matéria-prima</strong> </p>
                 <form>
                     <section class="espaco">
                         <div >
-                            <label for="nome">Nome do item</label>
-                            <input class="input-padrao" type="text" id="nome" required>
+                            <label for="materia-prima">Família de Matéria-prima</label>
+                            <select name="materia-prima" id="materia-prima">
+                                <option value="1">1</option>
+                                <option value="2">5</option>
+                                <option value="3">7</option>
+                                <option value="4">12</option>
+                              </select>
                         </div>
 
-                        <div>
-                            <label for="codigo-do-item">Código do item</label>
-                            <input class="input-numerico" type="text" id="codigo-do-item">
+                        <div class="fornecedor">
+                            <label for="fornecedor">Fornecedor</label>
+                            <input class="input-numerico" type="text" id="fornecedor">
+                        </div>
+
+                        <div class="código-do-produto">
+                            <label for="codigo-do-produto">Cógigo do produto</label>
+                            <input class="input-numerico" type="text" id="codigo-do-produto">
                         </div>
                     </section>
 
                     <section class="horizontal">
-                        
+
                         <div>
-                            <label for="descricao-do-item">Descrição do Item</label>
-                            <textarea class="input-padrao" type="text" id="descricao-do-item" rows="8" cols="50">  </textarea>
+                            <label for="nome-do-produto">Nome do produto</label>
+                            <input class="input-numerico" type="text" id="nome-do-produto">
+                            <br>
+                            <label for="preco-bruto">Preço bruto</label>
+                            <input class="input-numerico" type="text" id="preco-bruto">
                         </div>
 
                         <div>
-                            <label for="armazem">Armazém</label>
-                            <input class="input-numerico" type="text" id="armazem">
+                            <label for="descricao-do-produto">Descrição do produto</label>
+                            <input class="input-comprido" type="text" id="descricao-do-produto">
+                            <br>
+                            <label for="preco-liquido">Preço liquido</label>
+                            <input class="input-numerico" type="text" id="preco-liquido">
                         </div>
-                        <div>
-                            <label for="quantidade">Quantidade</label>
-                            <input class="input-numerico" type="text" id="quantidade">
-                        </div>
-                        <div>
-                            <label for="unidade-de-medida">Unidade de medida</label>
+                        <!-- <div>
+                            <label for="unidade-de-medida">Armazém</label>
                             <input class="input-numerico" type="text" id="unidade-de-medida">
+                            
+                            <br>
+                            <br>
+                            <br>
+                            <label for="contagem3">Unidade de Venda (KG)</label>
+                            <input class="input-numerico" type="text" id="contagem3">
+                        </div> -->
+                    </section>
+
+                    <section class="horizontal">
+                        <div>
+                            <label for="nome-do-produto">Rend. Prepação</label>
+                            <input class="input-numerico" type="text" id="nome-do-produto">
                         </div>
+
+                        <div>
+                            <label for="nome-do-produto">Rend. Fusão</label>
+                            <input class="input-numerico" type="text" id="nome-do-produto">
+                        </div>
+
+                        <div>
+                            <label for="preco-liquido">Rend. Metálico</label>
+                            <input class="input-numerico" type="text" id="preco-liquido">
+                        </div>              
                     </section>
                     
-                    <section class="contagem">
-                        <div>
-                            <label for="contagem1">Contagem 1</label>
-                            <input class="input-numerico" type="text" id="contagem1">
+                    <section class="nome-do-produto">
+                        <p><strong>Elementos Químicos</strong></p>
+                        <div class="elements">
+                            <div>
+                                <label for="si">Si</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Fe</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Cu</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Mn</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Mg</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Zn</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Ni</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Cr</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Pb</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Sn</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Ti</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
                         </div>
-
-                        <div>
-                            <label for="contagem2">Contagem 2</label>
-                            <input class="input-numerico" type="text" id="contagem2">
+                        <div class="elements">
+                            <div>
+                                <label for="si">Sb</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">P</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Cd</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Ka</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Sr</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Na</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Al3</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Al%</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">SF</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Outro cada</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
+                            <div>
+                                <label for="si">Outro Totais</label>
+                                <input class="input-numerico" type="text" id="si">
+                            </div>
                         </div>
-
                         <div>
-                            <label for="contagem3">Contagem 3</label>
-                            <input class="input-numerico" type="text" id="contagem3">
+                            <div>
+                                <label for="nome-do-produto">Rend. Preparação</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                                <br>
+                                <label for="nome-do-produto">Rend. Prepação</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                            </div>
+    
+                            <div>
+                                <label for="nome-do-produto">Rend. Fusão</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                                <br>
+                                <label for="nome-do-produto">Rend. Prepação</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                            </div>
+
+                            <div>
+                                <label for="nome-do-produto">Rend. Prepação</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                            </div>
+    
+                            <div>
+                                <label for="nome-do-produto">Rend. Fusão</label>
+                                <input class="input-numerico" type="text" id="nome-do-produto">
+                            </div>
                         </div>
                     </section>
                 </form>
@@ -106,7 +246,7 @@
         </div>
 
         <footer>
-            <p>Desenvolvido por Guilu</p>
+            <p>Desenvolvido por <strong>Guilu</strong></p>
         </footer>
     </body>
 </html>

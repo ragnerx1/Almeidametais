@@ -1,10 +1,9 @@
 header{
     width: 100vw;
-    height: 23vh;
+    height: 100px;
     background-color: #b3b2b0;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     position: relative;
    
 }
@@ -53,7 +52,6 @@ header{
     display: flex;
     align-items: center;
 }
-
 .navigation ul ul {
     display: none;
     background-color: #fca316;
@@ -70,7 +68,7 @@ header{
 }
 
 .ola {
-    height: 4vh;
+    height: 2.5vh;
     display: flex;
     justify-content: space-between;
     background-color: #787777;
@@ -82,12 +80,18 @@ header{
     color: white;
     background-color: #787777;
     margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.5vw;
 }
 
 .ola p{
     color: white;
     margin-left: 1%;
     font-size: 95%;
+    /* display: flex; */
+    align-items: center;
 }
 
 .lista-branca li a{
@@ -128,7 +132,7 @@ textarea:focus {
 
 
 .main .way {
-    margin: 30px 0px;
+    margin: 1% 0;
 }
 
 .espaco {
@@ -150,9 +154,9 @@ form .horizontal {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 85%;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 form .horizontal textarea {
@@ -164,9 +168,9 @@ form .horizontal textarea {
     height: 100px;
 }
 
-form p {
+/* form p {
     margin-top: 50px;
-}
+} */
 
 form label {
     font-size: 13px;
@@ -176,10 +180,18 @@ form .input-padrao {
     width: 350px;
 }
 
+form .input-comprido {
+    width: 410%;
+}
+
 form section div {
     display: flex;
     flex-direction: column;
-    margin-left: 0 30px 0 10px;
+    margin-top: 0%;
+}
+
+form section div br{
+    height: 5%;
 }
 
 section div {
@@ -203,11 +215,33 @@ body .button {
     margin-bottom: 20px;
 }
 
+.elements{
+    display: flex;
+    flex-direction: row;
+    width: 64vw;
+}
+
+.elements label{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.elements .input-numerico{
+    width: 50px;
+    height: 30px;
+}
+
 footer {
     position:absolute;
     bottom:0;
     width:100%;
-    background-color: #b3b2b0 ;
+    height: 2vh;
+    background-color: #b3b2b0;
+    align-items: center;
 }
 
 footer p{
@@ -216,4 +250,10 @@ footer p{
     color: blue;
     font-weight: 400;
     margin-right: 1%;
+    font-size: 10px;
+}
+
+footer strong{
+    color: blue;
+    margin-left: 2px;
 }
